@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ТрейдМонтажСервіс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f5f7fa; color: #222; line-height: 1.6; }
+
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e0e0e0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header img { height: 60px; }
+
+    nav a {
+      margin-left: 20px;
+      color: #003366;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff7f27;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 87, 184, 0.7)), url('https://images.unsplash.com/photo-1581093588401-6c89c6d3c7a4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: #ffffff;
+      text-align: center;
+      padding: 120px 20px 100px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background: #ff7f27;
+      padding: 15px 35px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #e86e17;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #003366;
+      margin-bottom: 30px;
+      border-left: 6px solid #ff7f27;
+      padding-left: 12px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: #fff;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item p {
+      padding: 10px;
+      font-weight: 500;
+      background: #f5f7fa;
+      text-align: center;
+    }
+
+    .contact {
+      background: #003366;
+      color: white;
+      border-radius: 10px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .contact a { color: #ffcc80; text-decoration: none; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; }
+      nav { margin-top: 10px; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/IMG_4409.JPG" alt="ТрейдМонтажСервіс">
+  <nav>
+    <a href="#about">Про нас</a>
+    <a href="#services">Послуги</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Професійне обслуговування вагового обладнання</h1>
+  <p>Надійність. Точність. Відповідність стандартам.</p>
+  <a href="#contact">Замовити консультацію</a>
+</section>
+
+<section id="about">
+  <h2>Про компанію</h2>
+  <p>«ТрейдМонтажСервіс» — команда професіоналів, що надає повний спектр послуг з продажу, монтажу, обслуговування та тарування промислового вагового обладнання. Ми працюємо з підприємствами по всій Україні, гарантуючи високий рівень якості, точності та відповідності нормативним вимогам.</p>
+</section>
+
+<section id="services">
+  <h2>Наші послуги</h2>
+  <div class="services">
+    <div class="service-box"><h3>Продаж</h3><p>Промислові ваги: платформні, автомобільні, кранові, аналітичні.</p></div>
+    <div class="service-box"><h3>Монтаж</h3><p>Інсталяція ваг з урахуванням умов експлуатації та точності.</p></div>
+    <div class="service-box"><h3>Сервіс</h3><p>Регулярне технічне обслуговування та усунення несправностей.</p></div>
+    <div class="service-box"><h3>Тарування</h3><p>Професійна перевірка точності з каліброваними гирями.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Галерея</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <a href="assets/E4D0281D-FEA3-49CC-92DE-B5918E650B84.png" data-lightbox="gallery" data-title="Платформні ваги"><img src="assets/E4D0281D-FEA3-49CC-92DE-B5918E650B84.png" alt=""></a>
+      <p>Платформні ваги</p>
+    </div>
+    <div class="gallery-item">
+      <a href="assets/6B84552B-D0F3-4FEC-80B3-55531A285A3A.png" data-lightbox="gallery" data-title="Автомобільні ваги"><img src="assets/6B84552B-D0F3-4FEC-80B3-55531A285A3A.png" alt=""></a>
+      <p>Автомобільні ваги</p>
+    </div>
+    <div class="gallery-item">
+      <a href="assets/926EA52A-C0BE-4312-8C22-5FC458F585D7.png" data-lightbox="gallery" data-title="Монтаж"><img src="assets/926EA52A-C0BE-4312-8C22-5FC458F585D7.png" alt=""></a>
+      <p>Монтаж</p>
+    </div>
+    <div class="gallery-item">
+      <a href="assets/B05FF309-D717-4190-9281-D78B8E177192.png" data-lightbox="gallery" data-title="Обслуговування"><img src="assets/B05FF309-D717-4190-9281-D78B8E177192.png" alt=""></a>
+      <p>Обслуговування</p>
+    </div>
+    <div class="gallery-item">
+      <a href="assets/E4D0281D-FEA3-49CC-92DE-B5918E650B84.png" data-lightbox="gallery" data-title="Тарування"><img src="assets/E4D0281D-FEA3-49CC-92DE-B5918E650B84.png" alt=""></a>
+      <p>Тарування</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Звʼяжіться з нами</h2>
+  <p>Телефон: <a href="tel:+380677524852">+38 067 752 48 52</a></p>
+  <p>Email: <a href="mailto:info@tms.com.ua">info@tms.com.ua</a></p>
+  <p>Ми працюємо по всій Україні!</p>
+</section>
+
+<footer>
+  © 2025 ТрейдМонтажСервіс. Всі права захищені.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
