@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакти</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #002F5A, #FF8000);
+      color: white;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 40px;
+    }
+    .left, .right {
+      flex: 1 1 400px;
+    }
+    .left h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .left p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+    .left img {
+      margin-top: 20px;
+      width: 160px;
+      height: auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .form-group textarea {
+      height: 100px;
+      resize: none;
+    }
+    .form-group button {
+      background-color: orange;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .consultant {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+    }
+    .consultant img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .left, .right {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>КОНТАКТИ</h1>
+      <p>Зв’яжіться з нами, щоб отримати консультацію або замовити послуги</p>
+      <p><strong>Телефон:</strong> +38 067 123 45 67</p>
+      <p><strong>Email:</strong> info@example.com</p>
+      <img src="assets/IMG_4409.JPG" alt="Логотип"/>
+    </div>
+    <div class="right">
+      <div class="form-group">
+        <input type="text" placeholder="Ім’я">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Повідомлення"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Надіслати</button>
+      </div>
+      <div class="consultant">
+        <img src="assets/IMG_3907.jpeg" alt="Консультант"/>
+        <div>
+          <strong>Ваш персональний консультант:</strong><br/>
+          Дем’яненко Роман<br/>
+          +38 067 752 48 52
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
