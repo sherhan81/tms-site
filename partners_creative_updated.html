@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Креативний блок партнери</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    .partners-section {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1c1c1c, #2d2d2d);
+    }
+    .partners-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #f47c20;
+    }
+    .partners-section p {
+      font-size: 1.1em;
+      color: #ccc;
+      margin-bottom: 50px;
+    }
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .logo-circle {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .logo-circle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    .logo-circle img {
+      max-height: 50px;
+      max-width: 70px;
+    }
+    @media (max-width: 768px) {
+      .logo-circle {
+        width: 80px;
+        height: 80px;
+      }
+      .logo-circle img {
+        max-height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="partners-section" id="partners">
+  <h2>Наші партнери</h2>
+  <p>Ми пишаємось співпрацею з найкращими</p>
+  <div class="logo-grid">
+    <div class="logo-circle"><img src="assets/IMG_4539.png" alt="Партнер 1"></div>
+    <div class="logo-circle"><img src="assets/IMG_4538.png" alt="Партнер 2"></div>
+    <div class="logo-circle"><img src="assets/IMG_4537.png" alt="Партнер 3"></div>
+  </div>
+</section>
+
+</body>
+</html>
