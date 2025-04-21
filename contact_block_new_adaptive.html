@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакти</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+    }
+    .left-panel {
+      background-color: #003865;
+      color: white;
+      padding: 40px 30px;
+      flex: 1 1 300px;
+    }
+    .left-panel h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .left-panel p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .left-panel img.logo {
+      max-width: 200px;
+      margin-top: 30px;
+    }
+    .right-panel {
+      background-color: #f47c20;
+      color: #333;
+      padding: 40px 30px;
+      flex: 2 1 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .contact-form button {
+      padding: 12px 20px;
+      background-color: #c65400;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .consultant-box {
+      display: flex;
+      align-items: center;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .consultant-box img {
+      border-radius: 50%;
+      width: 80px;
+      margin-right: 15px;
+    }
+    .consultant-box .info {
+      font-size: 14px;
+    }
+    .consultant-box .info strong {
+      display: block;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="contact-section">
+  <div class="left-panel">
+    <h2>КОНТАКТИ</h2>
+    <p>Зв'яжіться з нами</p>
+    <p>Щоб отримати консультацію або замовити послуги</p>
+    <p>Телефон:<br><strong>+38 067 123 45 67</strong></p>
+    <p>Email:<br><strong>info@example.com</strong></p>
+    <img src="assets/логотип.png" alt="ТрейдМонтажСервіс" class="logo" />
+  </div>
+
+  <div class="right-panel">
+    <form class="contact-form" method="POST" action="mailto:info@example.com" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ім’я" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <textarea name="message" placeholder="Повідомлення" rows="4" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+
+    <div class="consultant-box">
+      <img src="assets/roman.jpg" alt="Дем’яненко Роман" />
+      <div class="info">
+        Ваш персональний консультант<br>
+        <strong>Дем’яненко Роман</strong>
+        +38 067 752 48 52
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
