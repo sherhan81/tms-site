@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ціни - ТрейдМонтажСервіс</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    section {
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    .card h3 {
+      color: #002b5c;
+    }
+    .card .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+    .card.orange {
+      background: #fff8f1;
+      border: 2px solid #f47c20;
+    }
+    .card.orange .price, .card.orange a {
+      background-color: #f47c20;
+    }
+    .card.blue {
+      background: #eef6fd;
+      border: 2px solid #2196f3;
+    }
+    .card.blue .price, .card.blue a {
+      background-color: #2196f3;
+    }
+    .card.green {
+      background: #eaf7ee;
+      border: 2px solid #4caf50;
+    }
+    .card.green .price, .card.green a {
+      background-color: #4caf50;
+    }
+    table {
+      margin: 40px auto 0;
+      border-collapse: collapse;
+      width: 95%;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f47c20;
+      color: white;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section id="prices">
+  <h2>Наші ціни</h2>
+  <p>Популярні послуги — просто, прозоро, вигідно</p>
+
+  <div class="card-container">
+    <div class="card orange">
+      <h3>Монтаж</h3>
+      <p class="price">від 2 500 грн</p>
+      <ul>
+        <li>• Встановлення</li>
+        <li>• Пусконалагодження</li>
+        <li>• Інструктаж</li>
+      </ul>
+      <a href="index.html#about">Замовити</a>
+    </div>
+    <div class="card blue">
+      <h3>Сервіс</h3>
+      <p class="price">від 1 200 грн</p>
+      <ul>
+        <li>• Діагностика</li>
+        <li>• Заміна компонентів</li>
+        <li>• Виїзд спеціаліста</li>
+      </ul>
+      <a href="index.html#about">Замовити</a>
+    </div>
+    <div class="card green">
+      <h3>Тарування</h3>
+      <p class="price">від 1 000 грн</p>
+      <ul>
+        <li>• Калібрування гирями</li>
+        <li>• Акт перевірки</li>
+        <li>• Метрологічна точність</li>
+      </ul>
+      <a href="index.html#about">Замовити</a>
+    </div>
+  </div>
+
+  <h3 style="text-align: center; margin-top: 60px;">Повний перелік послуг та цін</h3>
+  <div style="overflow-x:auto; margin-top: 20px;">
+    <table>
+      <thead>
+        <tr>
+          <th>Послуга</th>
+          <th>Опис</th>
+          <th>Ціна</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ремонт терміналу</td>
+          <td>Заміна дисплею, корпусу, відновлення живлення</td>
+          <td>від 1 800 грн</td>
+        </tr>
+        <tr>
+          <td>Налаштування ваг</td>
+          <td>Програмування, введення в експлуатацію</td>
+          <td>від 900 грн</td>
+        </tr>
+        <tr>
+          <td>Калібрування гирями</td>
+          <td>Повна процедура з документами</td>
+          <td>від 1 000 грн</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</body>
+</html>
